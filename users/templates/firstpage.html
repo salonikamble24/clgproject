@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/firstpage.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <form class="login-form">
+        <button class="btn btn--primary btn--block">
+            <a href="{% url 'estimate' %}">Estimate The Cost</a></button>
+        <button class="btn btn--secondry btn--block">
+            <a href="{% url 'tender' %}">Tender</a></button>
+    </form>
+</body>
+
+</html>

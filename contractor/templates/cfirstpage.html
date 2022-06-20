@@ -1,0 +1,37 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/cfirstpage.css' %}">
+    <title></title>
+</head>
+
+<body>
+    <div class="main">
+        <form method="post">
+            <div id="name">
+                <h2 class="name">Contractor Name</h2>
+                <input class="contractor_name" type="text" name="contractor_name">
+
+                <h2 class="name">Address</h2>
+                <input class="address" type="text" name="address">
+
+                <h2 class="name">Phone No</h2>
+                <input class="phone_no" type="text" name="phone_no">
+
+                <h2 class="name">Building Cost</h2>
+                <input class="building_cost" type="text" name="building_cost">
+
+                <h2 class="name">Work Experience</h2>
+                <input class="work_experience" type="text" name="work_experience">
+
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estimatedcost.css' %}">
+    <title></title>
+</head>
+
+<body>
+    <div class="main">
+        <form methods="POST" action="">
+            {% csrf_token %}
+            <div id="name">
+                <h2 class="name">Cement Bag</h2>
+                <input class="cement_bag" type="text" name="cement_bag" value="{{c_bag}}">
+
+                <h2 class="name">Sand Bag</h2>
+                <input class="sand_bag" type="text" name="sand_bag" value="{{s_bag}}">
+
+                <h2 class="name">Aggregates</h2>
+                <input class="aggregates" type="text" name="aggregates" value="{{a_bag}}">
+
+                <!-- <h2 class="name">Steel</h2>
+                <input class="steel" type="text" name="steel"> -->
+
+                <h2 class="name">Bricks</h2>
+                <input class="bricks" type="text" name="bricks" value="{{t_bricks}}">
+
+                <h2 class="name">Estimated Cost</h2>
+                <input class="estimated_cost" type="text" name="estimated_cost" value="{{e_cost}}">
+                
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

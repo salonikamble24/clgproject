@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about_us.css' %}">
+    <title></title>
+</head>
+
+<body>
+
+    <h1>About Us</h1>
+    </div>
+
+    <p class="message">This system helpful for the user who want to build their house itself.
+        <br>As the user put the information about the construction this system will display the quantity of material required and estimated cost of the construction.
+        <br>Then system also display the vendors list and their contact list those vendors are already registered in the system.
+        <br>It also includes the tender system whenever the user fill the requirements this system notify all the contractor about the users requirements and then contractors fill the tender.
+        <br>As per the users requirement the user can decide contractor.
+        <br>
+    </p>
+    <a class="btn" href="{% url 'home' %}">Back</a>
+</body>
+
+</html>

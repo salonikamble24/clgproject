@@ -1,0 +1,63 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estimate.css' %}">
+    <title></title>
+</head>
+
+<body>
+    <div class="main">
+        <form method="POST" action="">
+            {% csrf_token %}
+            <div id="name">
+                <h2 class="name">Built Up Area</h2>
+                <input class="Length" type="text" name="Length">
+                <lable class="Lengthlabel">Length</lable>
+                <input class="Breadth" type="text" name="Breadth">
+                <lable class="Breadthlabel">Breadth</lable>
+
+                <h2 class="name">Soil Type</h2>
+                <select class="option" name="soil_Type">
+                    <option disabled="disabled" selected="selected">--select--</option>
+                    <option>Black Hard Stone </option>
+                    <option>Hard Rock</option>
+                    <option>Black Soil</option>
+                    <option>Murrum</option>
+                    <option>Lime Sand Stone</option>
+                </select>
+
+
+                <h2 class="name">Rooms</h2>
+                <input class="Rooms" type="text" name="Rooms" onchange="detect()" id="number_rooms">
+                <div id="add_fields_here" class="add_fileds">
+                </div>
+
+                <h2 class="name">Roofing</h2>
+                <select class="option" name="roofing">
+                    <option disabled="disabled" selected="selected">--select--</option>
+                    <option>RCC</option>
+                    <option>Metal Sheet</option>
+                </select>
+                <button type="submit">Calculate</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function detect() {
+        let number_rooms = document.getElementById('number_rooms')
+        let fields_area = document.getElementById('add_fields_here')
+        console.log(number_rooms.value)
+        let add_room = ""
+        for (let i = 0; i < number_rooms.value; i++) {
+            add_room += "<div><label for=''>Length</label><input type='text' name=h_" + i + "><label for=''>Breadth</label><input type='text' name='l_" + i + "'></div>"
+        }
+        fields_area.innerHTML = add_room
+
+    }
+</script>
+
+</html>

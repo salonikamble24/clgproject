@@ -1,0 +1,57 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ body {
+     background-image: url("bg4.jpg");
+     background-position: center;
+     background-size: cover;
+     font-family: serif;
+     margin-top: 50px;
+ }
+ 
+ h1 {
+     text-align: center;
+     color: #fff;
+     font-family: serif;
+     font-size: 80px;
+ }
+ 
+ .message {
+     padding-left: 20px;
+     padding-bottom: 25px;
+     font-family: serif;
+     font-size: 20px;
+     color: #fff;
+     margin-top: 50px;
+     letter-spacing: 1.2px;
+     line-height: 30px;
+     text-align: center;
+ }
+ 
+ a {
+     text-decoration: none !important;
+ }
+ 
+ .btn {
+     background: #aaa;
+     background-color: #fff;
+     text-align: center;
+     border-radius: 14px;
+     border: 2px solid #000;
+     padding: 10px;
+     width: 50px;
+     outline: none;
+     color: #000;
+     font-family: serif;
+     font-size: 12px;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     cursor: pointer;
+ }
+ 
+ .btn:hover {
+     background-color: #555;
+ }

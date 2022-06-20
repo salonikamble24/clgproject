@@ -1,0 +1,35 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/vfirstpage.css' %}">
+    <title></title>
+</head>
+
+<body>
+    <div class="main">
+        <form method="POST" action="">
+            {% csrf_token %}
+            <div id="name">
+                <h2 class="name">Company Name</h2>
+                <input class="Company_name" type="text" name="company_name">
+
+                <h2 class="name">Company Address</h2>
+                <input class="Company_Address" type="text" name="company_address">
+
+                <h2 class="name">Selling Material Name</h2>
+                <input class="Material_Name" type="text" name="material_name">
+
+                <h2 class="name">Phone No</h2>
+                <input class="phone_no" type="text" name="phone_no">
+
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

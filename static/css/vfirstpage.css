@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("bg4.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: serif;
+    margin-top: 40px;
+}
+
+.main {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 800px;
+    height: 550px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+form {
+    padding: 10px;
+}
+
+#name {
+    width: 100%;
+    height: 100px;
+}
+
+.name {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Company_name {
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    width: 480px;
+    color: #555;
+}
+
+.Company_Address {
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    width: 480px;
+    color: #555;
+}
+
+.Material_Name {
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    width: 480px;
+    color: #555;
+}
+
+.phone_no {
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    width: 480px;
+    color: #555;
+}
+
+button {
+    background-color: #0c1bf1;
+    display: block;
+    margin: 10px 0px 0px 10px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #000;
+    padding: 14px 110px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    font-family: serif;
+    font-size: 16px;
+    transition: 0.25px;
+}
+
+button:hover {
+    background-color: #5390F5;
+}
